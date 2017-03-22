@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head> <title> wp1 </title> 
+<link type="text/css" rel="stylesheet" href="wpcs1.cs">
+</head>
+<body>
+
+<center>
+<div id="mandiv"> <img src="wp11.jpg" rel="logo"> <h1><b>TRANSFAST</b></h1>
+<h1><b> ONLINE MONEY TRANSFER</b> </h1>
+</div></center>
+
+<!-----<marquee direction="right">welcome there! please experience our service.</marquee>---->
+
+<div  class="mallesh">
+<ul>
+<li>  <a href="wp1.html" class="active" target="">HOME</a></li>
+<li> <a href="#NEWS">NEWS </a></li>
+<li> <a href="https://www.trans-fast.eu/en/page/contacts">CONTACT</a></li>
+<li style="float:right"><a href="https://www.trans-fast.eu/en/page/aboutus"> ABOUT </a></li>
+</ul>
+</div>
+<div id="maindiv">
+<div id="f1">
+<h2> Welcome to Online Money Transfer.</h2>
+<h3> Login to TransFast </h3>
+
+
+<form action="wp3.php" method="POST">
+<p> ( CARE:Email(or)Username and Password are case sensitive)</p>
+Email or Username* <br>
+<input type="text" id="username" name="fbus" maxlength="20" required="required"> <br><br>
+Password* <br>
+<input type="password" id="password"  name="tbus" maxlength="20" required="required"> 
+<a href="#forgotpassword" onclick="fun()">Forgot password?</a><br><br>
+<input type="submit" value="SUBMIT">&nbsp;&nbsp;       					<!--  onclick="func1()" -->
+<input type="reset" value="Reset"><br><br>
+<h2> New User? Register here</h2>
+<input type="button" id="signup" value="REGISTER"  onclick="func()">                
+</form>
+</div>
+<div id="f2">
+<img src="san.jpg" alt="not found" style="width:800px; height:550px;">
+</div>
+</div>
+<script>
+function func1(){
+window.open("wp3.html");
+}
+function func(){
+window.open("wp2.html");
+}
+    function fun(){
+        alert("We have sent your username along with password to the registered email. Please do refer there!")
+    }
+</script>
+
+</body>
+</html>

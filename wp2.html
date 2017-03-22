@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head> <title> wp2 </title> 
+<link type="text/css" rel="stylesheet" href="wpcs2.cs">
+
+<!----------------------------------------THIS IS  script START------------------------------------------------------>
+
+
+<script language="JavaScript">
+function func(){
+window.open("wp1.html");}
+
+
+function valid() {
+var x = document.getElementById('password').value;
+if (x.length<6 || x.length>12) {
+alert("passord length must not be less than 6 and greater than 12");
+return false;
+}
+var y = document.getElementById('rpassword').value;
+if(x!=y) {
+alert("password and confirm-password should be same");
+return false;
+}
+
+}
+</script>
+
+<!-------------------------------var z = document.getElementById('mobile').value;
+if (z.length!=10) {
+alert("mobile number should be equal to 10");
+return false;
+}---------THIS IS  script end------------------------------------------------------>
+
+
+</head>
+<body>
+<center>
+<div id="mandiv"> <img src="wp11.jpg" rel="logo"> <h1><b>TRANSFAST</b></h1>
+<h1><b> ONLINE MONEY TRANSFER</b> </h1>
+</div></center>
+<div  class="mallesh">
+<ul>
+<li> <a href="wp1.html" class="active" target="">HOME</a></li>
+<li> <a href="#NEWS">NEWS </a></li>
+<li> <a href="#CONTACT">CONTACT</a></li>
+<li style="float:right"><a href="#ABOUT"> ABOUT </a></li>
+</ul>
+</div>
+<h2> Welcome to Online Money Transfer.</h2>
+<h3> Signup to TransFast </h3>
+
+<!----------------------------------------THIS IS  FORM START------------------------------------------------------>
+
+<div id="maindiv">
+   <div id="f1">
+      <form action="http://localhost/wp1.php" method="POST" onsubmit="return valid()">
+	<p> ( CARE:Username and Password are case sensitive)</p>
+	FirstName*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" id="fname" maxlength="20" name="firstname"  required="required" placeholder="First name"><BR/><br/> 
+	LastName*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input 	type="text" required="required"  placeholder="Last name"id="lname" maxlength="20" name="lastname" value=""> <br/><br/>
+	Email*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" id="email" maxlength="30" placeholder="Email" name="email" required="required"> <br><br>
+
+	Username*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" id="username" name="username" maxlength="20"  placeholder="Create username" required="required"> <br><br>
+	Password*: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="password" id="password" name="password" placeholder="Create password" maxlength="20" required="required"><br><br>
+	confirm password*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="password" id="rpassword" name="conpass" placeholder="confirm password" maxlength="20" required="required"><br><br>
+	Mobile*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" id="mobile" name="mobile" placeholder="mobile no." required="required" > <br><br>
+	Gender*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="gender" value="Male">Male  
+	<input type="radio" name="gender" value="Female">Female <br><br>
+
+	<p>By clicking SUBMIT button, you agree to <br>the Customer Agreement and Privacy Policy.</p>
+	<input type="submit" id="submit" name="submit" value="submit">
+	<input type="reset"  value="Reset">
+      </form>
+  </div>
+    <div id="f2">
+       <img src="keyb.jpg" alt="not found" style="width:1000px; height:563px;">
+    </div>
+</div>
+
+</body>
+</html>
